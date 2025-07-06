@@ -1,0 +1,46 @@
+{
+  "name": "userscript-github-repo-creation-date",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Display creation date of repositories on GitHub",
+  "homepage": "https://github.com/pacexy/userscript-github-repo-creation-date#readme",
+  "bugs": "https://github.com/pacexy/userscript-github-repo-creation-date/issues",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pacexy/userscript-github-repo-creation-date.git"
+  },
+  "funding": "https://github.com/sponsors/pacexy",
+  "license": "MIT",
+  "author": "pacexy <pacexy@gmail.com>",
+  "type": "module",
+  "scripts": {
+    "build": "tsc && vite build",
+    "dev": "vite",
+    "format": "prettier --write .",
+    "lint": "eslint .",
+    "prepare": "simple-git-hooks",
+    "preview": "vite preview",
+    "update": "corepack use pnpm@latest && pnpm update --latest",
+    "postversion": "git push --follow-tags"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,md,mdx,css,json,yml,yaml}": "prettier --write",
+    "*.{js,jsx,ts,tsx}": "eslint --fix"
+  },
+  "prettier": "@pacexy/prettier-config",
+  "devDependencies": {
+    "@pacexy/eslint-config": "^0.7.0",
+    "@pacexy/prettier-config": "^0.5.0",
+    "eslint": "^9.30.1",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.6.2",
+    "simple-git-hooks": "^2.13.0",
+    "typescript": "^5.8.3",
+    "vite": "^7.0.2",
+    "vite-plugin-monkey": "^5.0.9"
+  },
+  "packageManager": "pnpm@10.12.4+sha512.5ea8b0deed94ed68691c9bad4c955492705c5eeb8a87ef86bc62c74a26b037b08ff9570f108b2e4dbd1dd1a9186fea925e527f141c648e85af45631074680184"
+}
