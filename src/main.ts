@@ -14,18 +14,20 @@ function parseCurrentPath() {
   return { owner, name }
 }
 
-function formatDate(date: string) {
+function formatDate(date: string, format: 'short' | 'long' = 'short') {
   const d = new Date(date)
   return d.toLocaleDateString('en-US', {
     year: 'numeric',
-    month: 'short',
+    month: format,
+    day: format === 'long' ? 'numeric' : undefined,
   })
 }
 
 function inject(date: string) {
   const container = document.createElement('span')
   container.id = name
-  container.textContent = `(${date})`
+  container.title = `Created on ${formatDate(date, 'long')}`
+  container.textContent = `(${formatDate(date)})`
   container.style.color = 'var(--fgColor-disabled)'
   container.style.marginLeft = '8px'
 
@@ -41,7 +43,7 @@ async function run() {
   const { repo } = await fetchRepo(owner, name)
   log(repo)
 
-  inject(formatDate(repo.createdAt))
+  inject(repo.createdAt)
 }
 
 // eslint-disable-next-line unicorn/prefer-top-level-await
