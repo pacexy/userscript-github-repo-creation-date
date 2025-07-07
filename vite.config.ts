@@ -11,7 +11,7 @@ export default defineConfig({
         description: 'Display creation date of repositories on GitHub',
         icon: 'https://vitejs.dev/logo.svg',
         namespace: 'npm/vite-plugin-monkey',
-        match: ['https://www.google.com/'],
+        match: ['https://github.com/*/*'],
       },
       server: {
         open: false,
