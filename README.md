@@ -4,6 +4,10 @@ Display creation date of repositories on GitHub
 
 [Install on Greasyfork](https://greasyfork.org/scripts/[id])
 
+## Screenshot
+
+<img src="./screenshot.webp" width="300">
+
 ## Acknowledgments
 
 This userscript was inspired by and builds upon the work of the following projects:
