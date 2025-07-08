@@ -9,7 +9,7 @@ export default defineConfig({
       userscript: {
         name: 'GitHub Repo Creation Date',
         description: 'Display creation date of repositories on GitHub',
-        icon: 'https://vitejs.dev/logo.svg',
+        icon: 'https://github.com/favicon.ico',
         namespace: 'npm/vite-plugin-monkey',
         match: ['https://github.com/*/*'],
       },
