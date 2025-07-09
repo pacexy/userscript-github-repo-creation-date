@@ -1,6 +1,6 @@
 {
   "name": "userscript-github-repo-creation-date",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Display creation date of repositories on GitHub",
   "homepage": "https://github.com/pacexy/userscript-github-repo-creation-date#readme",
