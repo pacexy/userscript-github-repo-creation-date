@@ -1,3 +1,7 @@
+> [!Caution]
+>
+> This userscript is no longer maintained because [Refined GitHub](https://github.com/refined-github/refined-github) already implements this [feature](https://github.com/refined-github/refined-github/blob/main/source/features/repo-age.tsx). Please use Refined GitHub for a more robust and actively maintained solution.
+
 # Userscript: GitHub Repo Creation Date
 
 Display creation date of repositories on GitHub
